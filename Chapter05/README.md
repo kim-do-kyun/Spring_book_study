@@ -1,4 +1,4 @@
-# 04장 [자바가 확장한 객체 지향]
+# 05장 [객체 지향 설계 5원칙 - SOLID]
 ## :pencil: 정리
 ### 1. 객체 지향 설계(OOD; Object Oriented Design)의 5원칙
 * <strong>SRP(Single Responsibility Principle)</strong> : 단일 책임 원칙
