@@ -133,9 +133,18 @@ Tire tire;
   * 스프링 AOP는 런타임(runtime) 기반이다.
 
 #### 용어
-* Aspect - 관점, 측면, 양상
-* Advisor - 조언자, 고문
-* Advice - 조언, 충고
-* JoinPoin - 결합점
-* Pointcut - 자르는 점
+* Aspect - 관점, 측면, 양상(여러개의 Advice와 여러 개의 Pointcut의 결합체를 의미하는 용어)
+* Advisor - 조언자, 고문(스프링 AOP에서만 사용하는 용어)
+* Advice - 조언, 충고(pointcut에 적용할 로직)
+* JoinPoin - 결합점(실행 시점에 실제 호출된 메서드가 무엇인지, 소유한 객체가 무엇인지, 파라미터는 무엇인지 등의 정보를 확인가능)
+* Pointcut - 자르는 점(횡단 관심사를 적용할 타깃 메서드를 선택하는 지시자)
+
+<br>
+* 광의의 JoinPoint란 Aspect 적용이 가능한 모든 지점
+* 협의의 JoinPoint란 호출된 객체의 메서드
+* 스프링 AOP를 적용할 수 있는 시점은 Before, After, AfterReturning, AfterThrowing, Around
+
+### 3. PSA(Portable Service Abstraction) - 일관성 있는 서비스 추상화
+* 서비스 추상화의 예로 JDBC를 들 수 있다
+* 어댑터 패터을 적용해 같은 일을 하는 다수의 기술을 공통의 인터페이스로 제어할 수 있게 한 것을 <strong>서비스 추상화</strong>라고 함
 
