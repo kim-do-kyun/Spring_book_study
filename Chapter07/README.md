@@ -114,7 +114,7 @@ Tire tire;
 #### 스프링을 통한 의존성 주입 - @Autowired vs @Resource vs <property>태그
 * @Autowired와 @Resource를 바꿔서 사용하는데 큰 차이가 없음
 * @Autowired와 @Resource중에서는 @Resource 추천
-* @Resource와 <property>중에서는 <property>추천
+* @Resource와 &lt;property&gt;중에서는 &lt;property&gt;추천
 * 프로젝트의 규모가 커질수록 XML파일도 용도별로 분리할 수 있어 <property>를 추천
 
 ### 2. AOP(Aspect-Oriented Programming) - Aspect? 관점? 핵심 관심사? 횡단 관심사?
